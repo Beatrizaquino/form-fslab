@@ -32,7 +32,8 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #096E46;
+    border: 1px solid #096e4636;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .block{
@@ -52,6 +53,10 @@ h1 {
     font-weight: 600;
 }
 
+a {
+    font-size: 15px;
+}
+
 label{
     display: flex;
     flex-direction: column;
@@ -60,10 +65,11 @@ label{
 
 input {
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 50px;
     border: none;
     background-color: #EBEBEB ;
     margin-top: 10px;
+    box-sizing: border-box;
     
 }
 
@@ -72,15 +78,19 @@ input:focus{
 }
 
 input[type="submit"] {
+    margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
     color: #096E46;
     background-color:#25D691 ;
     font-weight: bold;
     padding: 10px 40px;
+    transition: background-color 0.1s ease-in 0.1s;
+
 }
 
 input[type="submit"]:hover {
-    background-color: #096E46;
-    color: #25D691;
+    background-color: #27bd83;
+    color: #096E46;
+    cursor: pointer;
 }
